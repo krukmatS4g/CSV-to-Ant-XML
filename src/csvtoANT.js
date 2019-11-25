@@ -55,9 +55,9 @@ function successFunction(data) {
 		table += '</td>';
 		
 		if(rowCell == typeRowNum) {
-			typeData = rowCells[rowCell].substr(1).slice(0, -1);
+			typeData = rowCells[rowCell];
 		}else if(rowCell == manifestNameRowNum) {
-			manifestNameData = rowCells[rowCell].substr(1).slice(0, -1);
+			manifestNameData = rowCells[rowCell];
 		}
 		
 	}
