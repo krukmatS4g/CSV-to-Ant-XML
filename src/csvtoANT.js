@@ -42,9 +42,9 @@ function successFunction(data) {
 		table += rowCells[rowCell];
 		table += '</th>';
 					
-		if(rowCells[rowCell] == '"Type"') {
+		if(rowCells[rowCell] == 'Type') {
 			typeRowNum = rowCell;
-		}else if(rowCells[rowCell] == '"Manifest Item Name"') {
+		}else if(rowCells[rowCell] == 'Manifest Item Name') {
 			manifestNameRowNum = rowCell;
 		}
 		
