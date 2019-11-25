@@ -3,6 +3,7 @@ var XMLData = '<?xml version="1.0" encoding="UTF-8"?>\n'+
 var manifestMap = {};
 var typeRowNum = 0;
 var manifestNameRowNum = 0;
+let versionNumber = '47.0';
 
  window.onload = function() {
 	var fileInput = document.getElementById('fileInput');
@@ -76,7 +77,7 @@ addValueToKey(typeData,manifestNameData);
   table += '</table>';
    
   makeXML();
-  XMLData = XMLData+ '<version>44.0</version>\n'+'</Package>';
+  XMLData = XMLData+ '<version>'+versionNumber+'</version>\n'+'</Package>';
   
   $('.xmlData').val(XMLData);
   $('.tableData').append(table);
